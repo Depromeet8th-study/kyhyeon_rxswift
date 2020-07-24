@@ -10,6 +10,7 @@ RxExample - Rx.playground 에 접근!
 **What is an observable?**
 
 - observable 핵심 뽀인트
+
   - 관찰할 수 있는게 무엇인지?
   - 어떻게 만들 것인지?
   - 어떻게 사용 할건지!?
@@ -21,7 +22,7 @@ RxExample - Rx.playground 에 접근!
 - 일정 기간 동안 emitting(방출)이라는 이벤트를 생성
   일정 시간 동안 이벤트가 1, 2, 3이 방출되었다!
 
-  ![image-20200724160625367](/Users/kyuhyeon/Library/Application Support/typora-user-images/image-20200724160625367.png)
+  ![image-20200724160625367](https://tva1.sinaimg.cn/large/007S8ZIlgy1gh27r6un8mj30d201n3yf.jpg)
 
 
 
@@ -29,11 +30,11 @@ RxExample - Rx.playground 에 접근!
 
 - 완료된(completed) 이벤트
 
-  ![image-20200724160834200](/Users/kyuhyeon/Library/Application Support/typora-user-images/image-20200724160834200.png)
+  ![image-20200724160834200](https://tva1.sinaimg.cn/large/007S8ZIlgy1gh27r7pvicj30dq01tq2v.jpg)
 
 - 에러(error) 이벤트
 
-  ![image-20200724160852049](/Users/kyuhyeon/Library/Application Support/typora-user-images/image-20200724160852049.png)
+  ![image-20200724160852049](https://tva1.sinaimg.cn/large/007S8ZIlgy1gh27r6bkeej30ce01vmx2.jpg)
 
 ```
 Observables은 요소(이벤트)를 방출한다. 
@@ -106,7 +107,7 @@ example("of") {
 }
 ```
 
-![image-20200724163236424](/Users/kyuhyeon/Library/Application Support/typora-user-images/image-20200724163236424.png)
+![image-20200724163236424](https://tva1.sinaimg.cn/large/007S8ZIlgy1gh27r7cj60j30v8072759.jpg)
 
 observable은 인트타입의 옵저버블을 생성 했고 초기화를 just를 통해 '1'를 할당
 
@@ -580,7 +581,7 @@ fileNotFound 응 파일 찾을 수 없어
 
 
 
-**도전 과제**
+#### 도전 과제
 
 1. 사이드 이펙트 `.do` 연산자
 

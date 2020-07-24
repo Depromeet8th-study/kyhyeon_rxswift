@@ -29,6 +29,36 @@ func writeSequenceToConsole<Source: ObservableType>(name: String, sequence: Sour
         print("Subscription: \(name), event: \(event)")
     }
 }
+
+
+
+
+// 내가 작성
+
+
+example("PublishSubject") {
+
+   // 1
+    let subject = PublishSubject<String>()
+
+    // 2
+    subject.onNext("Is anyone listening?")
+
+    // 3
+    let subscriptionOne = subject
+        .subscribe(onNext: { (string) in
+            print(string)
+        })
+
+    // 4
+    subject.on(.next("1"))        //Print: 1
+
+    // 5
+    subject.onNext("2")        //Print: 2
+}
+
+
+// 기존 코드
 /*:
  ## PublishSubject
  Broadcasts new events to all observers as of their time of the subscription.
