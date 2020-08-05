@@ -10,7 +10,7 @@ import UIKit
 
 class MemoDetailViewController: UIViewController, ViewModelBindableType {
 
-    var viewModel: MemoListViewModel!
+    var viewModel: MemoDetailViewModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()

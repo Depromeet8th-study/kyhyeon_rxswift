@@ -23,6 +23,10 @@
 		B8CD07E924DAEAD7007579FA /* MemoDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CD07E824DAEAD7007579FA /* MemoDetailViewModel.swift */; };
 		B8CD07EB24DAEB00007579FA /* MemoComposeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CD07EA24DAEB00007579FA /* MemoComposeViewModel.swift */; };
 		B8CD07ED24DAEB5C007579FA /* ViewModelBindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CD07EC24DAEB5C007579FA /* ViewModelBindableType.swift */; };
+		B8CD07EF24DAF162007579FA /* TransitionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CD07EE24DAF161007579FA /* TransitionModel.swift */; };
+		B8CD07F124DAF34E007579FA /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CD07F024DAF34E007579FA /* Scene.swift */; };
+		B8CD07F324DAFF91007579FA /* SceneCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CD07F224DAFF91007579FA /* SceneCoordinatorType.swift */; };
+		B8CD07F524DB0041007579FA /* SceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CD07F424DB0041007579FA /* SceneCoordinator.swift */; };
 		F7D5B44DF17DAE2AFBCFEF29 /* Pods_RxMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A049E143BC9F7E28BCC33B2D /* Pods_RxMemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +51,10 @@
 		B8CD07E824DAEAD7007579FA /* MemoDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoDetailViewModel.swift; sourceTree = "<group>"; };
 		B8CD07EA24DAEB00007579FA /* MemoComposeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoComposeViewModel.swift; sourceTree = "<group>"; };
 		B8CD07EC24DAEB5C007579FA /* ViewModelBindableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelBindableType.swift; sourceTree = "<group>"; };
+		B8CD07EE24DAF161007579FA /* TransitionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionModel.swift; sourceTree = "<group>"; };
+		B8CD07F024DAF34E007579FA /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		B8CD07F224DAFF91007579FA /* SceneCoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinatorType.swift; sourceTree = "<group>"; };
+		B8CD07F424DB0041007579FA /* SceneCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinator.swift; sourceTree = "<group>"; };
 		D05D960EA37E44F56BBC6ACB /* Pods-RxMemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMemo.release.xcconfig"; path = "Target Support Files/Pods-RxMemo/Pods-RxMemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,6 +124,10 @@
 		B8CD07D324DAD637007579FA /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				B8CD07EE24DAF161007579FA /* TransitionModel.swift */,
+				B8CD07F024DAF34E007579FA /* Scene.swift */,
+				B8CD07F224DAFF91007579FA /* SceneCoordinatorType.swift */,
+				B8CD07F424DB0041007579FA /* SceneCoordinator.swift */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -294,14 +306,18 @@
 			files = (
 				B8CD07BD24DAD331007579FA /* AppDelegate.swift in Sources */,
 				B8CD07EB24DAEB00007579FA /* MemoComposeViewModel.swift in Sources */,
+				B8CD07F524DB0041007579FA /* SceneCoordinator.swift in Sources */,
+				B8CD07F124DAF34E007579FA /* Scene.swift in Sources */,
 				B8CD07E324DAEA0B007579FA /* MemoDetailViewController.swift in Sources */,
 				B8CD07ED24DAEB5C007579FA /* ViewModelBindableType.swift in Sources */,
 				B8CD07DB24DADAF3007579FA /* MemoStorageType.swift in Sources */,
 				B8CD07DF24DADCA0007579FA /* MemoryStorage.swift in Sources */,
 				B8CD07BF24DAD331007579FA /* SceneDelegate.swift in Sources */,
 				B8CD07C724DAD331007579FA /* RxMemo.xcdatamodeld in Sources */,
+				B8CD07F324DAFF91007579FA /* SceneCoordinatorType.swift in Sources */,
 				B8CD07E724DAEAA1007579FA /* MemoListViewModel.swift in Sources */,
 				B8CD07E924DAEAD7007579FA /* MemoDetailViewModel.swift in Sources */,
+				B8CD07EF24DAF162007579FA /* TransitionModel.swift in Sources */,
 				B8CD07E124DAE9E0007579FA /* MemoListViewController.swift in Sources */,
 				B8CD07E524DAEA36007579FA /* MemoComposeViewController.swift in Sources */,
 				B8CD07D924DAD9A3007579FA /* Memo.swift in Sources */,
