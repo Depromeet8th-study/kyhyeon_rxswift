@@ -24,6 +24,8 @@ example("startWith") {
         .startWith("3️⃣", "🅰️", "🅱️")
         .subscribe(onNext: { print($0) })
         .disposed(by: disposeBag)
+
+    Observable.
 }
 /*:
  > As this example demonstrates, `startWith` can be chained on a last-in-first-out basis, i.e., each successive `startWith`'s elements will be prepended before the prior `startWith`'s elements.
