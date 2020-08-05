@@ -28,30 +28,7 @@ https://www.youtube.com/channel/UCtVacbJccQlQL_FP5XSEQMQ
 
 메모앱 만들기
 
+[#1](/RxMemoContents/RxMemo01.md)
 
-
-Action :  추상화?!
-
-**NSObject+Rx**
-
-**RxCoreData**
-
-**RxDataSources**
-
-프로젝트 구조?! 
-
-모델 Model
-
-ViewController
-
-ViewModel
-
-Service : 메모리 저장소. 코어데이터
-
-Scene : 화면 전환?!
-
-MVVM의 화면 전환은 씬 코디네이터
-
-VC 삭제 
- 메인 런치 스토리보드는 VC로
+[#2](/RxMemoContents/RxMemo02.md)
 
