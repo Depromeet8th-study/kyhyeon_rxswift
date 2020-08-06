@@ -27,6 +27,7 @@ class SceneCoordinator: SceneCoordinatorType {
     @discardableResult
     func transition(to scene: Scene, using style: TransititionStyle, animated: Bool) -> Completable {
         let subject = PublishSubject<Void>()
+        // 실제 생성자
         let target = scene.instantiate()
 
         switch style {

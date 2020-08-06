@@ -30,10 +30,47 @@
                     <view key="view" contentMode="scaleToFill" id="A00-K8-5vK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3mj-gh-K03">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" textLabel="iPY-1z-ekk" style="IBUITableViewCellStyleDefault" id="cMZ-uz-hGq">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cMZ-uz-hGq" id="lVt-k8-6up">
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iPY-1z-ekk">
+                                                    <rect key="frame" x="20" y="0.0" width="355" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="jyv-js-qbX" firstAttribute="trailing" secondItem="3mj-gh-K03" secondAttribute="trailing" id="5OU-99-Kjc"/>
+                            <constraint firstItem="3mj-gh-K03" firstAttribute="top" secondItem="jyv-js-qbX" secondAttribute="top" id="9Cq-Bl-W0G"/>
+                            <constraint firstItem="jyv-js-qbX" firstAttribute="bottom" secondItem="3mj-gh-K03" secondAttribute="bottom" id="Dhr-fH-zEK"/>
+                            <constraint firstItem="3mj-gh-K03" firstAttribute="leading" secondItem="jyv-js-qbX" secondAttribute="leading" id="ryU-A2-JCP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="jyv-js-qbX"/>
                     </view>
-                    <navigationItem key="navigationItem" title="메모 목록" id="a4V-nu-j5B"/>
+                    <navigationItem key="navigationItem" title="메모 목록" id="a4V-nu-j5B">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="peD-cq-dt4"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addButton" destination="peD-cq-dt4" id="Ixw-B9-zu3"/>
+                        <outlet property="listTableView" destination="3mj-gh-K03" id="IAm-rI-ArV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ibz-5i-T3d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -90,7 +127,7 @@
                 <navigationController storyboardIdentifier="ListNav" automaticallyAdjustsScrollViewInsets="NO" id="Ikt-bN-pTE" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="xLJ-KL-olK">
-                        <rect key="frame" x="0.0" y="44" width="414" height="104.5"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

@@ -7,7 +7,13 @@
 //
 
 import Foundation
+import RxSwift
+import RxCocoa
 
-class MemoListViewModel {
+class MemoListViewModel: CommonViewModel {
+    // 테이블뷰와 바인딩 할 수 있는 속성 - 왜 Read-Only Computed Properties일까?
+    var memoList: Observable<[Memo]> {
+        return storage.memoList()
+    }
 
 }
