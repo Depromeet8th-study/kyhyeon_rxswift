@@ -29,7 +29,7 @@ extension Scene {
             return nav
 
         case .detail(let viewModel):
-            guard var detailVC = storyboard.instantiateViewController(withIdentifier: "detailVC") as? MemoDetailViewController else { fatalError() }
+            guard var detailVC = storyboard.instantiateViewController(withIdentifier: "DetailVC") as? MemoDetailViewController else { fatalError() }
             detailVC.bind(viewModel: viewModel)
             return detailVC
 
