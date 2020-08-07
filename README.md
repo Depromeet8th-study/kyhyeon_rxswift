@@ -41,3 +41,17 @@ https://www.youtube.com/channel/UCtVacbJccQlQL_FP5XSEQMQ
 [#6](/RxMemoContents/RxMemo06.md) MemoComposeViewModel | MemoComposeViewController | Scene Coordinator - modal
 
 [#7](/RxMemoContents/RxMemo07.md) zip
+
+[#8](/RxMemoContents/RxMemo08.md) zip
+
+
+
+
+
+
+
+
+
+잠시 체크 
+
+https://gitlab.cleversolutions.hu/cleversolutions/mvvmdemo
