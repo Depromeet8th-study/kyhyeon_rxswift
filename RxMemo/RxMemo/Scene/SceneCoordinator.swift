@@ -10,6 +10,17 @@ import Foundation
 import RxSwift
 import RxCocoa
 
+extension UIViewController {
+    /*
+     실제로 화면에 표시되어 있는 화면을 리턴하는 속성
+     현재는 네비게이션컨트롤러만 고려함.
+     탭바 컨트롤이나 다른 컨테이너 컨트롤러라면 해당에 맞게 수정해야함
+     */
+    var sceneViewController: UIViewController {
+        return self.children.first ?? self
+    }
+}
+
 class SceneCoordinator: SceneCoordinatorType {
     private let bag = DisposeBag()
 
@@ -32,11 +43,15 @@ class SceneCoordinator: SceneCoordinatorType {
 
         switch style {
         case .root:
-            currentVC = target
+            currentVC = target.sceneViewController
             window.rootViewController = target
             subject.onCompleted()
 
         case .push:
+            /*
+             currentVC에 네비게이션컨트롤러가 찍힘
+             Scene instantiate .list의 리턴 값은 nav
+             */
             guard let nav = currentVC.navigationController else {
                 // 네비에 임베드 되어 있지 않다면
                 subject.onError(TransititionError.navigationControllerMissing)
@@ -44,14 +59,14 @@ class SceneCoordinator: SceneCoordinatorType {
             }
 
             nav.pushViewController(target, animated: animated)
-            currentVC = target
+            currentVC = target.sceneViewController
             subject.onCompleted()
 
         case .modal:
             currentVC.present(target, animated: animated) {
                 subject.onCompleted()
             }
-            currentVC = target
+            currentVC = target.sceneViewController
 
         }
 
@@ -64,6 +79,7 @@ class SceneCoordinator: SceneCoordinatorType {
         return Completable.create { [unowned self] completable in
             if let presentingVC = self.currentVC.presentingViewController {
                 self.currentVC.dismiss(animated: animated) {
+                    self.currentVC = presentingVC.sceneViewController
                     completable(.completed)
                 }
             } else if let nav = self.currentVC.navigationController {

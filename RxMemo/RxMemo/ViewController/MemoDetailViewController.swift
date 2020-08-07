@@ -47,5 +47,20 @@ class MemoDetailViewController: UIViewController, ViewModelBindableType {
                 }
         }
         .disposed(by: rx.disposeBag)
+        
+        // 새로운 바 버튼 생성
+        var backButton = UIBarButtonItem(title: nil, style: .done, target: nil, action: nil)
+
+        // 뷰모델에 저장되어 있는 타이틀과 버튼 타이틀을 바인딩
+        // 뷰모델에 저장되어 있는 타이틀이 title: Driver<String> 형태임으로 바인딩을 통해 해야함.
+        viewModel.title
+            .drive(backButton.rx.title)
+            .disposed(by: rx.disposeBag)
+        backButton.rx.action = viewModel.popAcion
+
+        // 기본 액션은 대체 되지 않음
+        // navigationItem.backBarButtonItem = backButton
+        navigationItem.hidesBackButton = true
+        navigationItem.leftBarButtonItem = backButton
     }
 }

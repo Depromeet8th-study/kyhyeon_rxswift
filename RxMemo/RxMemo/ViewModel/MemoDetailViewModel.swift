@@ -36,4 +36,9 @@ class MemoDetailViewModel: CommonViewModel {
 
         super.init(title: title, scenCoordinator: sceneCoordinator, storage: storage)
     }
+
+    // 백 버튼과 바인딩할 액션
+    lazy var popAcion = CocoaAction { [unowned self] in
+        return self.scenCoordinator.close(animated: true).asObservable().map { _ in }
+    }
 }

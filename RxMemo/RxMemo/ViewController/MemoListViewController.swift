@@ -51,6 +51,5 @@ class MemoListViewController: UIViewController, ViewModelBindableType {
             // viewModel.detailAction.inputs 전달
             .bind(to: viewModel.detailAction.inputs)
             .disposed(by: rx.disposeBag)
-
     }
 }
