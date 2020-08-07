@@ -38,7 +38,7 @@ class MemoDetailViewController: UIViewController, ViewModelBindableType {
                     cell.textLabel?.text = value
                     return cell
                 case 1:
-                    let cell = tableview.dequeueReusableCell(withIdentifier: "dataCell")!
+                    let cell = tableview.dequeueReusableCell(withIdentifier: "dateCell")!
                     cell.textLabel?.text = value
                     return cell
 
