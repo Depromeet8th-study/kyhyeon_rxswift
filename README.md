@@ -38,5 +38,6 @@ https://www.youtube.com/channel/UCtVacbJccQlQL_FP5XSEQMQ
 
 [#5](/RxMemoContents/RxMemo05.md) MemoListViewModel | MemoListViewController
 
-[#6](/RxMemoContents/RxMemo04.md) MemoComposeViewModel | MemoComposeViewController | Scene Coordinator - modal
+[#6](/RxMemoContents/RxMemo06.md) MemoComposeViewModel | MemoComposeViewController | Scene Coordinator - modal
 
+[#7](/RxMemoContents/RxMemo07.md) zip

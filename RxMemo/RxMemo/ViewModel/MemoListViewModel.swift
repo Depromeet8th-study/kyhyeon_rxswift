@@ -47,4 +47,16 @@ class MemoListViewModel: CommonViewModel {
         }
     }
 
+    // 속성 형태 - 클로저 형태에서 셀프로 접근해야함으로 lazy로 선언 뭔말?
+    lazy var detailAction: Action<Memo, Void> = {
+        return Action { memo in
+            // viewModel 생성
+            let detailViewModel = MemoDetailViewModel(memo: memo, title: "메모 보기", sceneCoordinator: self.scenCoordinator, storage: self.storage)
+
+            // 씬 생성
+            let detailScene = Scene.detail(detailViewModel)
+
+            return self.scenCoordinator.transition(to: detailScene, using: .push, animated: true).asObservable().map { _ in }
+        }
+    }()
 }
