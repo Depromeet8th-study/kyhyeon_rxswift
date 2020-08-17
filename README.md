@@ -1,7 +1,7 @@
 # kyhyeon_rxswift
 rxswift 스터디 내용 정리
 
-1주차 - 7월 20일 ~ 7월 24일, 25(토요일) 오프라인 진행
+#### 1주차 - 7월 20일 ~ 7월 24일, 25(토요일) 오프라인 진행
 [Chapter 1. Hellow RxSwift](/Chapter/Chapter1_Hellow_RxSwift.md)
 
 [Chapter 2. Observables](/Chapter/Chapter2_Observables.md)
@@ -9,7 +9,7 @@ rxswift 스터디 내용 정리
 [Chapter 3. Subjects](/Chapter/Chapter3_Subjects.md)
 
 
-2주차 - 7월 27일 ~ 7월 31일, 1일(토요일) 오프라인 진행
+#### 2주차 - 7월 27일 ~ 7월 31일, 1일(토요일) 오프라인 진행
 따라해볼, 분석 해볼 만한 프로젝트
 
 [awesomeopensource](https://awesomeopensource.com/projects/rxswift)
@@ -19,7 +19,7 @@ rxswift 스터디 내용 정리
 [RxSwift 스터디](https://github.com/fimuxd/RxSwift)
 
 
-3주차 - 8월 3일 ~ 7일, 8일(토요일) 온라인 진행
+#### 3주차 - 8월 3일 ~ 7일, 8일(토요일) 온라인 진행
 
 https://www.youtube.com/channel/UCtVacbJccQlQL_FP5XSEQMQ 
 
